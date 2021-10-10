@@ -624,14 +624,44 @@ body.ie ._ibg img {
 }
 .project-page-body {
   margin: 20px 0px 0px 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (max-width: 1240px) {
+  .project-page-body {
+    padding-left: calc(15px + 25 * ((100vw - 320px) / 920));
+  }
+}
+@media (max-width: 1240px) {
+  .project-page-body {
+    padding-right: calc(15px + 25 * ((100vw - 320px) / 920));
+  }
 }
 .project-page-body__text {
   font-size: 20px;
   margin-bottom: 15px;
 }
+.project-page-body__link-items {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.project-page-body__link-item {
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+}
+.project-page-body__link-item a {
+  color: blue;
+  text-decoration: underline;
+}
+@media (any-hover: hover) {
+  .project-page-body__link-item a:hover {
+    text-decoration: none;
+  }
+}
 .project-page-body__use-el-title {
   font-size: 18px;
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 .project-page-body__use-el {
   padding: 0px 0px 0px 5px;
