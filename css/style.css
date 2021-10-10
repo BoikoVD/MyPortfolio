@@ -599,26 +599,77 @@ body.ie ._ibg img {
   }
 }
 
-.PrimeOne-page {
+.project-page {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 @media (max-width: 1240px) {
-  .PrimeOne-page {
+  .project-page {
     padding-top: calc(10px + 20 * ((100vw - 320px) / 920));
   }
 }
 @media (max-width: 1240px) {
-  .PrimeOne-page {
+  .project-page {
     padding-bottom: calc(10px + 20 * ((100vw - 320px) / 920));
   }
 }
-.PrimeOne-page__image {
+.project-page__image {
   display: block;
   border: 1px solid #000;
   border-radius: 10px;
 }
-.PrimeOne-page__image img {
+.project-page__image img {
   width: 100%;
   border-radius: 10px;
+}
+.project-page-body {
+  margin: 20px 0px 0px 0px;
+}
+.project-page-body__text {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.project-page-body__use-el-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.project-page-body__use-el {
+  padding: 0px 0px 0px 5px;
+}
+.project-page-body__el {
+  padding: 5px 0px 5px 15px;
+  position: relative;
+}
+.project-page-body__el:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #000;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+}
+.project-page-body__link {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #000;
+  margin: 15px 0px 10px 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  background: #000;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .project-page-body__link:hover {
+    color: #000;
+    background: #fff;
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
 }

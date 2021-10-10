@@ -280,7 +280,7 @@ $md4:479.98;
 	}
 }
 //========================================================================================================
-.PrimeOne-page {
+.project-page {
 	@include adaptiv-value("padding-top", 30, 10, 1);
 	@include adaptiv-value("padding-bottom", 30, 10, 1);
 	&__container {}
@@ -295,4 +295,52 @@ $md4:479.98;
 		}
 	}
 	&__body {}
+}
+.project-page-body {
+	margin: 20px 0px 0px 0px;
+	&__text {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	&__use-el-title {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	&__use-el {
+		padding: 0px 0px 0px 5px;
+	}
+	&__el {
+		padding: 5px 0px 5px 15px;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			border-radius: 50%;
+			background: #000;
+			top: 50%;
+			left: 0;
+			transform: translate(0px, -50%);
+		}
+	}
+	&__link {
+		display: inline-block;
+		color: #fff;
+		border: 1px solid #000;
+		margin: 15px 0px 10px 0px;
+		padding: 10px 20px;
+		border-radius: 10px;
+		position: relative;
+		z-index: 2;
+		background: #000;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover{
+			color: #000;
+			background: #fff;
+			transform: scale(1.08);
+			}
+		}
+	}
 }
