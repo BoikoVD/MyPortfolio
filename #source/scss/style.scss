@@ -133,10 +133,17 @@ $md4:479.98;
 		visibility: hidden;
 		opacity: 0;
 		transition: all 0.3s ease 0s;
-		padding: 40px 25px;
+		padding: 25px 25px;
 		font-weight: 700;
 		color: #fff;
 		line-height: 160%;
+		p {
+			margin-bottom: 10px
+		}
+		span {
+			font-weight: 700;
+			text-decoration: underline;
+		}
 	}
 	&__image {
 		border-radius: 10px;
