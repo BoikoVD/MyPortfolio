@@ -477,8 +477,8 @@ body.ie ._ibg img {
 }
 @media (any-hover: hover) {
   .item__link:hover {
-    -webkit-transform: scale(1.08);
-            transform: scale(1.08);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
@@ -571,8 +571,8 @@ body.ie ._ibg img {
   .navigation__btn:hover {
     background: #fff;
     color: #000;
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
   }
 }
 .navigation__prev {
@@ -706,7 +706,7 @@ body.ie ._ibg img {
   .project-page-body__link:hover {
     color: #000;
     background: #fff;
-    -webkit-transform: scale(1.08);
-            transform: scale(1.08);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
 }
