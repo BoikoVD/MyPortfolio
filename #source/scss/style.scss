@@ -45,13 +45,14 @@ $md4:479.98;
 //<MAIN BLOCK>=========================================================================================
 .page {
 	flex: 1 1 auto;
+	background: #f1f2f7;
 	&__container {}
 	&__text {
 		text-align: center;
 	}
 	&__title {
 		@include adaptiv-value("font-size", 50, 40, 1);
-		margin: 10px 0px;
+		margin: 20px 0px;
 	}
 	&__subtitle {
 		@include adaptiv-value("font-size", 40, 26, 1);
@@ -67,7 +68,7 @@ $md4:479.98;
 		position: relative;
 		z-index: 1;
 		span {
-			background: #fff;
+			background: #f1f2f7;
 			padding: 0px 15px;
 		}
 		&:before{
@@ -95,11 +96,12 @@ $md4:479.98;
 	&__wrapper {
 		display: block;
 		position: relative;
+		background: #fff;
 		@include adaptiv-value("width", 350, 300, 1);
 		text-align: center;
 		padding: 10px;
-		border-radius: 10px;
-		border: 1px solid #000;
+		//border-radius: 10px;
+		//border: 1px solid #000;
 		transition: all 0.3s ease 0s;
 		@media (any-hover: hover) {
 			&:hover{
@@ -111,13 +113,13 @@ $md4:479.98;
 					color: #fff;
 				}
 				.item__link {
-					background: #fff;
+					background:  #f1f2f7;
 					color: #000;
 				}
 				border-color: #000;
-				-webkit-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.95);
-				-moz-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.95);
-				box-shadow: 0px 0px 26px 5px rgba(0,0,0,0.95);
+				-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.95);
+				-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.95);
+				box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.95);
 			}
 		}
 	}
@@ -128,7 +130,7 @@ $md4:479.98;
 		z-index: 1;
 		top: 0;
 		left: 0;
-		border-radius: 10px;
+		//border-radius: 10px;
 		background: rgba(0,0,0,0.6);
 		visibility: hidden;
 		opacity: 0;
@@ -146,11 +148,11 @@ $md4:479.98;
 		}
 	}
 	&__image {
-		border-radius: 10px;
+		//border-radius: 10px;
 		padding-top: 150px;
 		width: 100%;
 		img {
-			border-radius: 10px;
+			//border-radius: 10px;
 		}
 	}
 	&__description {
@@ -188,10 +190,10 @@ $md4:479.98;
 		//border: 1px solid #fff;
 		margin: 0px 0px 10px 0px;
 		padding: 10px 20px;
-		border-radius: 10px;
+		//border-radius: 10px;
 		position: relative;
 		z-index: 2;
-		background: #000;
+		background: #3b3d49;
 		transition: all 0.3s ease 0s;
 		@media (any-hover: hover) {
 			&:hover{
@@ -220,10 +222,10 @@ $md4:479.98;
 		align-items: center;
 		justify-content: center;
 		min-height: 40px;
-		border: 1px solid #000;
-		background: #000;
-		color: #fff;
-		border-radius: 10px;
+		border: 1px solid #3b3d49;
+		background: #f1f2f7;
+		color: #3b3d49;
+		//border-radius: 10px;
 		padding: 10px 15px;
 		position: relative;
 		transition: all 0.3s ease 0s;
@@ -246,16 +248,16 @@ $md4:479.98;
 		}
 		@media (any-hover: hover) {
 			&:hover{
-				background: #fff;
-				color: #000;
-				transform: scale(1.01);
+				background: #3b3d49;
+				color: #f1f2f7;
+				//transform: scale(1.01);
 			}
 		}
 	}
 	&__prev {
 		padding: 10px 15px 10px 40px;
 		&:before{
-			border-right: 10px solid #fff;
+			border-right: 10px solid #3b3d49;
 			top: 50%;
 			left: 15px;
 			transform: translate(0px, -50%);
@@ -263,7 +265,7 @@ $md4:479.98;
 		@media (any-hover: hover) {
 			&:hover{
 				&:before{
-					border-right: 10px solid #000;
+					border-right: 10px solid #f1f2f7;
 				}
 			}
 		}
@@ -272,7 +274,7 @@ $md4:479.98;
 	&__next {
 		padding: 10px 40px 10px 15px;
 		&:before{
-			border-left: 10px solid #fff;
+			border-left: 10px solid #3b3d49;
 			top: 50%;
 			right: 15px;
 			transform: translate(0px, -50%);
@@ -280,7 +282,7 @@ $md4:479.98;
 		@media (any-hover: hover) {
 			&:hover{
 				&:before{
-					border-left: 10px solid #000;
+					border-left: 10px solid #f1f2f7;
 				}
 			}
 		}
@@ -288,8 +290,10 @@ $md4:479.98;
 }
 //========================================================================================================
 .project-page {
+	min-height: 100vh;
 	@include adaptiv-value("padding-top", 30, 10, 1);
 	@include adaptiv-value("padding-bottom", 30, 10, 1);
+	background: #f1f2f7;
 	&__container {}
 	&__nav {}
 	&__image {
@@ -353,20 +357,21 @@ $md4:479.98;
 	}
 	&__link {
 		display: inline-block;
-		color: #fff;
-		border: 1px solid #000;
+		color: #3b3d49;
+		border: 1px solid #3b3d49;
 		margin: 15px 0px 10px 0px;
 		padding: 10px 20px;
-		border-radius: 10px;
+		font-size: 24px;
+		//border-radius: 10px;
 		position: relative;
 		z-index: 2;
-		background: #000;
+		background: #f1f2f7;
 		transition: all 0.3s ease 0s;
 		@media (any-hover: hover) {
 			&:hover{
-			color: #000;
-			background: #fff;
-			transform: scale(1.02);
+			color: #f1f2f7;
+			background: #3b3d49;
+			//transform: scale(1.02);
 			}
 		}
 	}
