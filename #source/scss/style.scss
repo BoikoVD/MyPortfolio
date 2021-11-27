@@ -164,7 +164,7 @@ $md4:479.98;
 		align-items: center;
 	}
 	&__title {
-		margin: 10px 0px 0px 0px;
+		margin: 10px 0px 20px 0px;
 		@include adaptiv-value("font-size", 30, 20, 1);
 	}
 	&__type-text {

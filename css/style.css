@@ -427,7 +427,7 @@ body.ie ._ibg img {
           align-items: center;
 }
 .item__title {
-  margin: 10px 0px 0px 0px;
+  margin: 10px 0px 20px 0px;
   font-size: 30px;
 }
 @media (max-width: 1240px) {
