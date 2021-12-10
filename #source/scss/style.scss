@@ -501,6 +501,9 @@ $blue:#57ffdc;
 		}
 		.item__images {
 			padding: 20px 20px 20px 0px;
+			@media (max-width: 700px){
+				padding: 20px 0px 20px 0px;
+			}
 		}
 		.item__image {
 			border-radius: 100px 290px 100px 290px / 100px 200px 100px 200px;
@@ -635,6 +638,9 @@ $blue:#57ffdc;
 	}
 	&__images {
 		padding: 20px 0px 20px 20px;
+		@media (max-width: 700px){
+			padding: 20px 0px 20px 0px;
+		}
 	}
 	&__image-wrapper {}
 	&__image {

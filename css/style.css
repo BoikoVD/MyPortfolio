@@ -723,6 +723,11 @@ body.ie ._ibg img {
 .item:nth-child(2n) .item__images {
   padding: 20px 20px 20px 0px;
 }
+@media (max-width: 700px) {
+  .item:nth-child(2n) .item__images {
+    padding: 20px 0px 20px 0px;
+  }
+}
 .item:nth-child(2n) .item__image {
   border-radius: 100px 290px 100px 290px/100px 200px 100px 200px;
 }
@@ -915,6 +920,11 @@ body.ie ._ibg img {
 }
 .item__images {
   padding: 20px 0px 20px 20px;
+}
+@media (max-width: 700px) {
+  .item__images {
+    padding: 20px 0px 20px 0px;
+  }
 }
 .item__image {
   width: 100%;
